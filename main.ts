@@ -7,10 +7,10 @@
 
 let currentTemperature: number
 
-basic.clearScreen ()
-basic.showIcon (IconNames.Happy)
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
 
-    input.onButtonPressed(Button.A, function () {
-        const currentTemperature = input.temperature();
-        basic.showString("The Temperature is: " + convertToText (Math.round(currentTemperature + 273.15)) + " K.")
-    })
+input.onButtonPressed(Button.A, function () {
+    const currentTemperature = input.temperature()
+    basic.showString("The Temperature is: " + (Math.round(currentTemperature + 273.15)).toString() + " K.")
+})
