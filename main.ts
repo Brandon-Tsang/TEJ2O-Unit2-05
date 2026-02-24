@@ -6,7 +6,6 @@
 */
 
 let currentTemperature: number
-let lightValuePercentage: number
 
 basic.clearScreen ()
 basic.showIcon (IconNames.Happy)
