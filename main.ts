@@ -5,12 +5,12 @@
  * This program will tell me the temperature in kelvin.
 */
 
-let currentTemperature: number
+const currentTemperature: number
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-    let currentTemperature = input.temperature()
+    const currentTemperature = input.temperature()
     basic.showString("The Temperature is: " + (Math.round(currentTemperature + 273.15)).toString() + " K.")
 })
